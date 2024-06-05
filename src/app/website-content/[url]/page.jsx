@@ -10,7 +10,7 @@ async function fetchWebsiteContent(url) {
     return text;
   } catch (error) {
     console.error('Error fetching content:', error);
-    return 'Error fetching content';
+    return 'Error fetching content ' + JSON.stringify(error);
   }
 }
 
